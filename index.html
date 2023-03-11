@@ -9,26 +9,55 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="bayan_container">
+            
         <div class="header">
-           <h1 class="title">CSS Bayan</h1> 
-        </div>
-        <div class="container_acc">
-            <section>
-                <input id="acc_item_1" type="radio" class="item"></input>
-                <label for="acc_item_1">Junior developer</label>
-                <div class="image">
-                    <span class="text">Junior</span>
-                </div>
-            </section>
-            <section>
-                <input id="acc_item_2" type="radio" class="item" checked></input>
-                <label for="acc_item_2">Senior developer</label>
-                <div class="image2">
-                    <span class="text">Senior</span>
-                </div>
-            </section>
+            <div class="title">CSS Bayan</div> 
+            <hr class="line">
         </div>
 
+        <div class="accordion-container">
+            <ul id="acc">
+                <li>
+                    <label for="mem1">Junior developer
+                        <span><img src="./images/icon_plus.png" alt ='icon' class="plus"></span>
+                    </label>
+                    <input type="radio" name="accordion" id="mem1" checked>
+                    <div class="image">
+                        <img src="./images/junior.jpg" alt ='junior'>
+                    </div>
+                </li>
+                <li>
+                    <label for="mem2">Senior developer</label>
+                    <input type="radio" name="accordion" id="mem2">
+                    <div class="image">
+                        <img src="./images/senior.jpg" alt="Senior">
+                    </div>
+                </li>
+                <li>
+                    <label for="mem3">Evolution of memory storage</label>
+                    <input type="radio" name="accordion" id="mem3">
+                    <div class="image">
+                        <img src="./images/storage.jpg" alt="storage">
+                    </div>
+                </li>
+                <li>
+                    <label for="mem4">Journey of a programmer</label>
+                    <input type="radio" name="accordion" id="mem4">
+                    <div class="image">
+                        <img src="./images/journey.jpg" alt="journey">
+                    </div>
+                </li>
+                <li>
+                    <label for="mem5">Address meme</label>
+                    <input type="radio" name="accordion" id="mem5">
+                    <div class="image">
+                        <img src="./images/address.jpg" alt="Senior">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
     </div>
 </body>
 </html>

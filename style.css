@@ -1,50 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 .wrapper{
-    width: 320px;
-    height: 568px;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.bayan_container{
+    width: 80%;
     margin: 0 auto;
 }
 
 .header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .title{
-    color: #000000;
-    font-size: 15px;
-    font-weight: 800;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.container_acc{
+.line{
+    height: 0.05rem;
+    color: red;
     width: 100%;
 }
 
-.container_acc:hover{
+.accordion-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
     cursor: pointer;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.item{
-    height: 20%;
+ul, li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#acc li{
+    background: rgba(233, 255, 248, 0.219);
+    border-radius: 0.2rem;
+}
+
+#acc li label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    color:brown;
+}
+
+#acc li label span{
+    color: brown;
+    font-weight: 400;
+    margin-right: 5%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#acc label + input[type="radio"]{
+    height: 0;
+    width: 0;
+}
+
+.plus{
+    height: 0;
+    width: 0;
 }
 
 .image{
-    width: 320px;
-    height: 200px;
-    background: url('images/junior.jpg');
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
 }
 
-.text{
-    color: red;
-    font-weight: 800;
-    font-size: 20px;
-    float: right;
-    padding-top: 10px;
-    padding-right: 10px;
-}
-
-.image2{
-    width: 320px;
-    height: 200px;
-    background: url('images/senior.jpg');
+#acc label + input[type="radio"]:checked + .image{
+    max-height: 20%;
 }
