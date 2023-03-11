@@ -89,7 +89,7 @@ ul, li{
 .image{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height 0.5s;
 }
 
 #acc label + input[type="radio"]:checked + .image{
